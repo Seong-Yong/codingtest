@@ -9,7 +9,6 @@ int main()
 	cin.tie(NULL);
 	cout.tie(NULL);
 	string s;
-	string alphabet = "abcdefghijklmnopqrstuvwxyz";
 	cin >> s;
 
 	for (char i = 'a'; i <= 'z'; i++)
