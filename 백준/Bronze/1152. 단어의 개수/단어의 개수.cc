@@ -15,16 +15,17 @@ int main()
 		cout << 0 << '\n';
 		return 0;
 	}
+	count = 1;
 	for (int i = 0; i < s.length(); i++) {
 		if (s[i] == ' ') {
-			if (s[i + 1] && s[i + 1] != ' ')
-				count++;
+			count++;
 		}
-		
+
 	}
-	if (s[0] == ' ' || s[s.length()] == ' ')
+	if (s[0] == ' ')
+		count--;
+	if (s[s.length()-1] == ' ')
 		count--;
 
-	cout << count+1 << '\n';
-   
+	cout << count << '\n';
 }
